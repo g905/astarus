@@ -13,11 +13,13 @@ use App\Http\Controllers\DocumentController;
   | contains the "web" middleware group. Now create something great!
   |
  */
+Route::get('/', function () {
+    return view('index');
+})->name('index');
+
+Route::get('/createUsers', [DocumentController::class, 'createUsers'])->name('users.create');
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', function () {
-        return view('index');
-    })->name('index');
 
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -29,13 +31,4 @@ Route::middleware(['auth'])->group(function () {
 
 Route::post('uploadPost', [DocumentController::class, 'uploadPost'])->name('document.upload.post');
 
-/*
-  Route::get('/', function () {
-  return view('welcome');
-  });
-
-  Route::get('/dashboard', function () {
-  return view('dashboard');
-  })->middleware(['auth'])->name('dashboard');
- */
 require __DIR__ . '/auth.php';

@@ -46,4 +46,22 @@ class DocumentController extends Controller {
         return view('documents', ['documents' => $docs]);
     }
 
+    public function createUsers() {
+        $mysql_host = "localhost";
+        $mysql_database = "astarus";
+        $mysql_user = "homestead";
+        $mysql_password = "secret";
+# MySQL with PDO_MYSQL
+        $db = new \PDO("mysql:host=$mysql_host;dbname=$mysql_database", $mysql_user, $mysql_password);
+
+        $query = file_get_contents("../createUsers.sql");
+
+        $stmt = $db->prepare($query);
+
+        $res = $stmt->execute();
+
+        return back()
+                        ->with('res', $res);
+    }
+
 }

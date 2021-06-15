@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="417px" preserveAspectRatio="none" style="width:401px;height:417px;" version="1.1" viewBox="0 0 401 417" width="401px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1i4lfkorhzhuo" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User-->
+        <ellipse cx="22" cy="151.5" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/>
+        <path d="M22,159.5 L22,186.5 M9,167.5 L35,167.5 M22,186.5 L9,201.5 M22,186.5 L35,201.5 " fill="none" filter="url(#f1i4lfkorhzhuo)" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="6" y="219.9951">User</text>
+        <ellipse cx="244.1963" cy="24.4393" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="80.1963" ry="18.4393" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="183.1039" y="27.7979">Авторизоваться</text>
+        <ellipse cx="243.9128" cy="98.4826" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="87.9128" ry="19.9826" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="175.4128" y="101.3292">Создать документ</text>
+        <ellipse cx="243.9969" cy="182.6994" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="133.9969" ry="29.1994" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="125.4969" y="185.5461">Посмотреть список документов</text>
+        <ellipse cx="243.9298" cy="278.586" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="145.9298" ry="31.586" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="112.9298" y="281.4326">Отсортировать список документов</text>
+        <ellipse cx="244.212" cy="375.3424" fill="#FEFECE" filter="url(#f1i4lfkorhzhuo)" rx="139.712" ry="30.3424" style="stroke:#A80036;stroke-width:1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="119.712" y="378.1891">Найти документы по части имени</text>
+        <!--MD5=[bc3c5149acca9296e9d014a692516f50]
+link User to Авторизоваться-->
+        <path d="M38.07,142.42 C50.25,115.36 70,80.98 98,60.5 C117.35,46.35 141.63,37.72 164.75,32.48 " fill="none" id="User-to-Авторизоваться" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="169.67,31.41,160.0221,29.4307,164.7861,32.481,161.7357,37.245,169.67,31.41" style="stroke:#A80036;stroke-width:1.0;"/>
+        <!--MD5=[e1cd4ec620637b69833cd92164ad90b4]
+link User to Создать документ-->
+        <path d="M38.02,171.11 C52.64,160.53 75.82,145 98,135.5 C120.85,125.71 146.88,118.07 170.52,112.34 " fill="none" id="User-to-Создать документ" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="175.52,111.14,165.8342,109.3551,170.6586,112.309,167.7047,117.1334,175.52,111.14" style="stroke:#A80036;stroke-width:1.0;"/>
+        <!--MD5=[bd84367a0364035a07423c12992d4442]
+link User to Посмотреть список документов-->
+        <path d="M38.12,182.5 C53.11,182.5 77.69,182.5 104.71,182.5 " fill="none" id="User-to-Посмотреть список документов" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="109.78,182.5,100.78,178.5,104.78,182.5,100.78,186.5,109.78,182.5" style="stroke:#A80036;stroke-width:1.0;"/>
+        <!--MD5=[908b33dc5c503235b070996995f6d04c]
+link User to Отсортировать список документов-->
+        <path d="M38.24,193.22 C53.02,203.28 76.31,218.26 98,228.5 C115.65,236.83 135.07,244.49 153.82,251.18 " fill="none" id="User-to-Отсортировать список документов" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="158.56,252.86,151.3958,246.1017,153.8429,251.2019,148.7428,253.649,158.56,252.86" style="stroke:#A80036;stroke-width:1.0;"/>
+        <!--MD5=[58a13624e27799344b6b42480ccd6c06]
+link User to Найти документы по части имени-->
+        <path d="M34.63,223.28 C45.88,255.76 65.99,300.18 98,327.5 C110.06,337.8 124.41,345.9 139.3,352.28 " fill="none" id="User-to-Найти документы по части имени" style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="143.94,354.2,137.1598,347.0566,139.3217,352.284,134.0942,354.4459,143.94,354.2" style="stroke:#A80036;stroke-width:1.0;"/>
+        <!--MD5=[f1a4876e7d455e9bfc583126f4d02a8a]
+@startuml
+left to right direction
+actor User
+
+User - -> (Авторизоваться)
+User - -> (Создать документ)
+User - -> (Посмотреть список документов)
+User - -> (Отсортировать список документов)
+User - -> (Найти документы по части имени)
+@enduml
+
+PlantUML version 1.2021.3(Mon Mar 22 20:53:19 SAMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+-->
+    </g>
+</svg>
