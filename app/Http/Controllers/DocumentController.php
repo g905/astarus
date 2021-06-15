@@ -36,9 +36,15 @@ class DocumentController extends Controller {
                         ->with('document', $documentName);
     }
 
-    public function list() {
+    public function list(Request $request) {
+        $sort = $request->sort;
         $docs = Document::all();
-        return view('documents', ['documents' => $docs, 'sort' => 'name']);
+        $docs = $docs->sortBy($sort);
+        return view('documents', ['documents' => $docs]);
+    }
+
+    public function sortDocs(Request $request) {
+
     }
 
 }

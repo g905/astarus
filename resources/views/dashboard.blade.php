@@ -4,17 +4,6 @@
             {{ __('Upload new document') }}
         </h2>
     </x-slot>
-    <!--
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-white border-b border-gray-200">
-                        You're logged in!
-                    </div>
-                </div>
-            </div>
-        </div>
-    -->
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -42,7 +31,7 @@
                 @endif
 
                 <div class="flex w-full items-center justify-center bg-grey-lighter my-3">
-                    <label class="w-full flex flex-col items-center px-4 py-6 bg-white text-blue uppercase border border-blue cursor-pointer">
+                    <label class="w-full flex flex-col items-center px-4 py-6 bg-white text-blue uppercase border border-blue cursor-pointer hover:bg-blue-100">
                         <span class="text-base leading-normal" id="fileBtn">Choose file</span>
                         <input type='file' name="document" class="hidden" onchange="document.querySelector('#fileBtn').innerText = this.files[0].name"/>
                     </label>
@@ -60,7 +49,6 @@
                 <button type="submit" class="my-8 w-full flex flex-col items-center px-4 py-6 uppercase font-bold bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                     Upload
                 </button>
-
 
             </form>
         </div>
