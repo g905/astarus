@@ -33,9 +33,15 @@
                 <div class="flex w-full items-center justify-center bg-grey-lighter my-3">
                     <label class="w-full flex flex-col items-center px-4 py-6 bg-white text-blue uppercase border border-blue cursor-pointer hover:bg-blue-100">
                         <span class="text-base leading-normal" id="fileBtn">Choose file</span>
-                        <input type='file' name="document" class="hidden" onchange="document.querySelector('#fileBtn').innerText = this.files[0].name"/>
+                        <input type='file' name="document" class="hidden" onchange='filename(this.files[0].name)'/>
                     </label>
                 </div>
+
+                <script>
+                    function filename(text) {
+                        document.querySelector('#fileBtn').innerText = text;
+                    }
+                </script>
 
                 <div class="uppercase font-bold">Title</div>
                 <input type="text" name="title" class="my-3 w-full flex flex-col items-center px-4 py-6 bg-white text-blue uppercase border">
