@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Document;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DocumentController extends Controller {
 
@@ -38,13 +39,11 @@ class DocumentController extends Controller {
 
     public function list(Request $request) {
         $sort = $request->sort;
-        $docs = Document::all();
+        $searchPhrase = strtolower($request->searchPhrase);
+        //dd($searchPhrase);
+        $docs = DB::table('documents')->where('name', 'like', '%' . $searchPhrase . '%')->get();
         $docs = $docs->sortBy($sort);
         return view('documents', ['documents' => $docs]);
-    }
-
-    public function sortDocs(Request $request) {
-
     }
 
 }

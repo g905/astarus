@@ -5,11 +5,20 @@
         </h2>
     </x-slot>
 
-    <form action="{{ 'documents' }}" method='get' class='hidden' id='sortForm'>
-        <input type='hidden' name='sort' id="sort" value='name'>
-    </form>
-
     <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+            <form action="{{ route('documents') }}" method="post" class="m-auto w-100" id="sortForm">
+                @csrf
+
+                <input type="text" name="searchPhrase" placeholder="input search word" class="my-3 w-full flex flex-col items-center px-4 py-4 bg-white text-blue uppercase border" value="{{ isset($_POST['searchPhrase']) ? $_POST['searchPhrase'] : '' }}"/>
+                <input type='hidden' name='sort' id="sort" value='name'/>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="py-10">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
             <table class="table-auto border-2">

@@ -24,6 +24,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::get('/documents', [DocumentController::class, 'list'])->name('documents');
+    Route::post('/documents', [DocumentController::class, 'list'])->name('search');
 });
 
 Route::post('uploadPost', [DocumentController::class, 'uploadPost'])->name('document.upload.post');
